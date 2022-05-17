@@ -2,9 +2,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        EmailLogger emailLogger = new EmailLogger();
-        emailLogger.Log("Log Message");
+        BaseLogger[] loggers = new BaseLogger[]{new FileLogger(), new EmailLogger(), new DatabaseLogger()};
 
-
+        for(BaseLogger logger: loggers){
+            logger.Log("Log Message");
+        }
     }
 }
