@@ -9,5 +9,11 @@ public class Main {
         employee.salary = 5000;
         customer.age = 25;
         employee.age = 20;
+
+        EmployeeManager employeeManager = new EmployeeManager();
+        CustomerManager customerManager = new CustomerManager();
+
+        employeeManager.Add();
+        customerManager.Add();
     }
 }
