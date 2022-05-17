@@ -1,2 +1,2 @@
-public class DatabaseLogger {
+public class DatabaseLogger extends BaseLogger{
 }
