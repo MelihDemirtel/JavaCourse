@@ -1,2 +1,2 @@
-public class FileLogger {
+public class FileLogger extends BaseLogger{
 }
