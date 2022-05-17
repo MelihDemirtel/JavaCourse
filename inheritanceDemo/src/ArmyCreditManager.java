@@ -1,2 +1,2 @@
-public class ArmyCreditManager {
+public class ArmyCreditManager extends BaseCreditManager{
 }
