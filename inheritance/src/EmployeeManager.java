@@ -5,4 +5,7 @@ public class EmployeeManager {
     public void Add(){
         System.out.println("Added");
     }
+    public void BestEmployee(){
+        System.out.println("Best Employee Getted");
+    }
 }
