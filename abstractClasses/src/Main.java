@@ -1,6 +1,11 @@
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
+        FemaleGameCalculator femaleGameCalculator = new FemaleGameCalculator();
+        femaleGameCalculator.calculation();
+        femaleGameCalculator.gameOver();
+
+        GameCalculator gameCalculators = new FemaleGameCalculator();
     }
 }

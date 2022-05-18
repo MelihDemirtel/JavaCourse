@@ -1,6 +1,8 @@
-public class GameCalculator {
+public abstract class GameCalculator {
 
-    public void calculation(){
-        System.out.println("Your Score : 100");
+    public abstract void calculation();
+
+    public final void gameOver(){
+        System.out.println("Game Over");
     }
 }
