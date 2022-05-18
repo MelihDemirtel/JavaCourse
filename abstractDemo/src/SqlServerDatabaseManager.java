@@ -1,2 +1,6 @@
-public class SqlServerDatabaseManager {
+public class SqlServerDatabaseManager extends BaseDatabaseManager{
+    @Override
+    public void getData() {
+        System.out.println("Data Getted : SQL Server");
+    }
 }
