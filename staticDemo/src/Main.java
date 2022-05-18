@@ -1,6 +1,12 @@
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
+        ProductManager productManager = new ProductManager();
+        Product product = new Product();
+        product.price = 500;
+        product.name = "Mouse";
+
+        productManager.add(product);
     }
 }
