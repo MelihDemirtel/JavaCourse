@@ -1,6 +1,19 @@
+import java.util.HashMap;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
+        HashMap<String,String> dictionary = new HashMap<String,String>();
+        dictionary.put("Book","Kitap");
+        dictionary.put("Table","Masa");
+        dictionary.put("Computer","Bilgisayar");
+        System.out.println(dictionary);
+
+        System.out.println(dictionary.get("Table"));
+
+        for (String item:dictionary.keySet()){
+            System.out.println("Item-"+item+" Value-"+dictionary.get(item));
+        }
     }
 }
