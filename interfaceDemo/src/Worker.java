@@ -1,7 +1,12 @@
-//Our Worker
-public class Worker implements IWorkable{
+//Our Workers
+public class Worker implements IWorkable, IEatable{
     @Override
     public void work() {
+
+    }
+
+    @Override
+    public void eat() {
 
     }
 }
