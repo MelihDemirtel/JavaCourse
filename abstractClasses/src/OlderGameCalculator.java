@@ -1,2 +1,7 @@
-public class OlderGameCalculator {
+public class OlderGameCalculator extends GameCalculator{
+
+    @Override
+    public void calculation() {
+
+    }
 }
