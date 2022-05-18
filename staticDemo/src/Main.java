@@ -8,5 +8,6 @@ public class Main {
         product.name = "Mouse";
 
         productManager.add(product);
+
     }
 }
