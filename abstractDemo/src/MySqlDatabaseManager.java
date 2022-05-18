@@ -1,2 +1,6 @@
-public class MySqlDatabaseManager {
+public class MySqlDatabaseManager extends BaseDatabaseManager{
+    @Override
+    public void getData() {
+        System.out.println("Data Getted : MySQL Server");
+    }
 }
