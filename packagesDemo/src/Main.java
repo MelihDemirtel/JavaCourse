@@ -1,4 +1,5 @@
 import math.FourOperation;
+import math.Logarithm;
 
 import java.util.Scanner;
 
@@ -14,8 +15,13 @@ public class Main {
 
         FourOperation fourOperation = new FourOperation();
 
-        int result = fourOperation.summing(1,2,3,4,5);
+        int result = fourOperation.summing(1,2);
         System.out.println(result);
+
+        Logarithm logarithm = new Logarithm();
+
+        double result2 = logarithm.calculateLogarithm();
+        System.out.println(result2);
 
     }
 }
