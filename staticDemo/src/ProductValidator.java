@@ -1,2 +1,5 @@
 public class ProductValidator {
+    public boolean isValid(){
+
+    }
 }
