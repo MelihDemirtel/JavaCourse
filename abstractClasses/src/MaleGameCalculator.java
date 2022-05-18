@@ -1,2 +1,2 @@
-public class MaleGameCalculator {
+public class MaleGameCalculator extends GameCalculator{
 }
