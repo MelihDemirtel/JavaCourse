@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public interface IWorkable {
+public interface IWorkable {
+    void work();
+    //extra work
 }

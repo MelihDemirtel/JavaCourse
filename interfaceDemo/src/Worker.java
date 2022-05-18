@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public class Worker {
+//Our Worker
+public class Worker {
 }
