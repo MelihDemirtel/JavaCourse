@@ -8,13 +8,13 @@ public class Main {
         System.out.println("Account : "+accountManager.getBalance());
         try {
             accountManager.withdraw(90);
-        } catch (Exception e) {
+        } catch (BalanceInsufficentException e) {
             System.out.println(e.getMessage());
         }
         System.out.println("Account : "+accountManager.getBalance());
         try {
             accountManager.withdraw(20);
-        } catch (Exception e) {
+        } catch (BalanceInsufficentException e) {
             System.out.println(e.getMessage());
         }
         System.out.println("Account : "+accountManager.getBalance());

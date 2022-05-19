@@ -5,7 +5,7 @@ public class AccountManager {
         balance = getBalance() + amount;
     }
 
-    public void withdraw(double amount) throws Exception {
+    public void withdraw(double amount) throws BalanceInsufficentException {
         if (balance >= amount) {
             balance = getBalance() - amount;
         }else {
