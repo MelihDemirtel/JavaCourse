@@ -1,2 +1,3 @@
-public class CustomerDal {
+public class CustomerDal implements IEntityRepository{
+
 }
