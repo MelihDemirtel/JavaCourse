@@ -6,6 +6,5 @@ public class MyList<T> {
     public void remove(T value){
         MyList<String> cities = new MyList<>();
         cities.add("Ankara");
-        cities.add(1);
     }
 }
