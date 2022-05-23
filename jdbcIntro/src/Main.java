@@ -1,24 +1,26 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class Main {
-
-    static String userName="root";
-    static String password="12345";
-    static String dbUrl="jdbc:mysql://localhost:3306/world";
 
     public static void main(String[] args) throws SQLException {
 
         Connection connection = null;
+        DbHelper helper = new DbHelper();
+
+        Statement statement = null;
+        ResultSet resultSet;
 
         try {
-            connection = DriverManager.getConnection(dbUrl,userName,password);
-            System.out.println("Connection OK");
-        }catch (SQLException exception){
-            System.out.println(exception.getMessage());
-        }
-        finally {
+            connection = helper.getConnection();
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery("select code,name,continent,region from country");
+
+            while (resultSet.next()){
+                System.out.println(resultSet.getString("name"));
+            }
+        } catch (SQLException exception) {
+            helper.showErrorMessage(exception);
+        } finally {
             connection.close();
         }
     }
